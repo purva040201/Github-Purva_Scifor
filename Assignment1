@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        table{
+            width:100%;
+            background-color: gray;
+            border: 1px solid black;
+        }
+        table th , table td{
+            border: 1px solid black;
+            text-align: center;
+            padding :5px;
+        }
+      
+    </style>
+</head>
+<body>
+    <table cellspacing="2">
+    <thead>
+        <tr>
+            <th>STUDENT NO</th>
+            <th>STUDENT NAME</th>
+            <th>STUDENT COURSE</th>
+            <th>STUDENT FEES</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>1</td>
+        <td>Nikita </td>
+        <td>Computer Science</td>
+        <td>5000</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Snehal </td>
+        <td>Civil</td>
+        <td>6000</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Yash</td>
+        <td>ENTC</td>
+        <td>9000</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Harsha</td>
+        <td>Mechanical</td>
+        <td>8000</td>
+    </tr>
+</table>
 
+</body>
+</html>
