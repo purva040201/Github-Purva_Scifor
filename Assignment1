@@ -56,6 +56,62 @@
 
 </body>
 </html>
-------------------- ---------------------------------------------
+------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Example</title>
+    <style>
+        
+        ul.custom-bullets {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul.custom-bullets li {
+            margin: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Ordered List -->
+    <h2>Grocery Items</h2>
+    <ol style="list-style-type: upper-roman;">
+        <li>Bread</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Butter</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <h2>Grocery Items </h2>
+    <ul class="custom-bullets">
+        <span style="position: absolute;  color: #2c3e50; " >◆</span>
+        <li>Fruits</li>
+        <span style="position: absolute;  color: #2c3e50; " >◆</span>
+        <li>Vegetables</li>
+        <span style="position: absolute;  color: #2c3e50; " >◆</span>
+        <li>Meat</li>
+        <span style="position: absolute;  color: #2c3e50; " >◆</span>
+        <li>Cheese</li>
+    </ul>
+
+    <!-- Definition List  -->
+    <h2>Definition List</h2>
+    <dl>
+        <dt>Java</dt>
+        <dd>A high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</dd>
+        <dt>Angular</dt>
+        <dd>A platform and framework for building single-page client applications using HTML and TypeScript.</dd>
+    </dl>
+
+</body>
+</html>
+
 
 
