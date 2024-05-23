@@ -11,17 +11,15 @@ in the <td> or <th> tags.
 The colspan attribute merges columns, and the rowspan attribute merges rows.
 code:
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Combine Colspan and Rowspan Example</title>
+    
 </head>
 <body>
     <table>
         <tr>
             <th>Header 1</th>
             <th>Header 2</th>
-            <th>Header 3</th>
-            <th>Header 4</th>
         </tr>
         <tr>
             <td rowspan="2" colspan="2"></td>
