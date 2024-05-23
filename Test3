@@ -1,1 +1,79 @@
+1) Formatting tag in HTML:
+   1. <b>: Bold text
+   2. <strong>: Strong importance
+   3. <mark>: Highlited text
+   4.<small>:Smaller text
+   5.<time>:date or time 
+   6.<p>:paragraph
+2) merge:
+-To merge cells in an HTML table, can use the colspan and rowspan attributes 
+in the <td> or <th> tags. 
+The colspan attribute merges columns, and the rowspan attribute merges rows.
+code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Combine Colspan and Rowspan Example</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2"></td>
+            <td>Column 3, Row 1</td>
+            <td>Column 4, Row 1</td>
+        </tr>
+        <tr>
+            <td>Column 3, Row 2</td>
+            <td>Column 4, Row 2</td>
+        </tr>
+        <tr>
+            <td>C 1, R 3</td>
+            <td>C 2, R 3</td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>
 
+3)cellspacing:
+
+In HTML tables, cellspacing and cellpadding are two different attributes used to
+control the spacing within and between table cells.
+   1. cellspacing:
+    - used in the <table> tag.
+    -CSS Equivalent: border-spacing.
+   2. cellpadding:
+    -used in the <table> tag.
+    -CSS Equivalent: padding applied to <td> or <th> elements.
+4) Semantic element :
+   - It is clearly describe its meaning to us. 
+     Semantic element are :
+        <h1> - <h6> , <table> , <footer> , <header> , <form> 
+
+5) Insert Background Image in html:
+      <!DOCTYPE html>
+<html>
+<head>
+    <title>Background Image Example</title>
+    <style>
+        body {
+            background-image: url('img.jpg');
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Website</h1>
+    <p>This page has a background image.</p>
+</body>
+</html>
+
+6) ALT attribute in html:
+   -The alt attribute in HTML is used with the <img> tag to provide alternative text for an image.
+   Syntax:
+     <img src="image.jpg" alt="Description of the image">
