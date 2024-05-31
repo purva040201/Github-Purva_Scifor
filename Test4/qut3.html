@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            min-width: 200px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+        @media (min-width: 600px) {
+            nav {
+                display: flex;
+                justify-content: center;
+            }
+            nav a {
+                flex: 1;
+            }
+        }
+        @media (min-width: 900px) {
+            .container {
+                flex-wrap: nowrap;
+            }
+            nav a {
+                padding: 14px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="content" id="home">
+            <h2>Home</h2>
+            <p>Welcome to responsive webpage.</p>
+        </div>
+        <div class="content" id="about">
+            <h2>About</h2>
+            <p>We provide various services to help your business grow. Learn more about us here.</p>
+        </div>
+        <div class="content" id="services">
+            <h2>Services</h2>
+            <p>Our services include web development, digital marketing, and more. </p>
+        </div>
+        <div class="content" id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us for any inquiries. We are here to help you.</p>
+        </div>
+    </div>
+
+    <footer>
+        2024 Website
+    </footer>
+
+</body>
+</html>

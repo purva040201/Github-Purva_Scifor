@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grocery Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tfoot {
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grocery List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Grocery Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rice</td>
+                <td>₹ 180</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Dal</td>
+                <td>₹ 200</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Pohe</td>
+                <td>₹ 55</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Chana Dal</td>
+                <td>₹ 155</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Price</td>
+                <td>₹ 830</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
