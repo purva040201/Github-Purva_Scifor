@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Foundation</title>
+    <!-- Foundation CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-border {
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container form-container">
+        <div class="grid-x grid-padding-x">
+            <div class="medium-18 cell form-border">
+                <h3>Sign Up Form</h3>
+                <form>
+                  
+                    <label for="name">Name
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </label>
+                    
+                   
+                    <label for="email">Email
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </label>
+                    
+                  
+                    <label for="password">Password
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </label>
+                    
+                
+                    <fieldset>
+                        <h6>Gender :</h6>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label><br>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </fieldset>
+                    
+                 
+                    <fieldset>
+                        <h6>Interests :</h6>
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports</label><br>
+                        
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music</label><br>
+                        
+                        <input type="checkbox" id="travel" name="interests" value="travel">
+                        <label for="travel">Travel</label><br>
+                        
+                        <input type="checkbox" id="reading" name="interests" value="reading">
+                        <label for="reading">Reading</label>
+                    </fieldset>
+                    <div class="button-container">
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
