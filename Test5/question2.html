@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Top-Bar Navigation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
+  <style>
+    .top-bar {
+      
+      color:black;
+    }
+    .top-bar .menu a {
+      color:black;
+    }
+    .top-bar .menu a:hover {
+      background-color: white;
+    }
+    .menu-text img {
+      vertical-align: middle;
+    }
+
+    .login-form {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #fff;
+    }
+    .login-form h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li class="menu-text">
+          <img src="logo.png" alt="Logo" style="height: 50px;">
+        </li>
+      </ul>
+    </div>
+    
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <li class="menu-text">
+        <img src="travel2.avif" alt="Logo" style="height: 500px; width: 1500px;">
+      </li>
+  </div>
+
+  <h3 style="text-align: center;">WELCOME TO TRAVEL WORLD</h3>
+  <div class="login-form">
+    <h2>Login</h2>
+    <form>
+      <label>Username
+        <input type="text" placeholder="Enter your username">
+      </label>
+      <label>Password
+        <input type="password" placeholder="Enter your password">
+      </label>
+      <button type="submit" class="button expanded">Login</button>
+    </form>
+  </div>
+ 
+</body>
+</html>
