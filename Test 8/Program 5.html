@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 8</title>
+</head>
+<body>
+    <script>
+        function manipulateArray(arr) {
+           
+            arr.push("VOLVO");
+
+            arr.pop();
+
+            arr = arr.map(function(element) {
+                return element.toUpperCase();
+            });
+
+            var joinedString = arr.join(", ");
+            return joinedString;
+        }
+
+        var array = ["apple", "banana", "cherry","mango"];
+        var manipulatedString = manipulateArray(array);
+        document.write("Manipulated Array: " + manipulatedString);
+    </script>
+</body>
+</html>

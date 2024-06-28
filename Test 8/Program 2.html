@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 8</title>
+</head>
+<body>
+   <script>
+    function countCharacters(arr) {
+            let charCount = {};
+            arr.forEach(char => {
+                if (charCount[char]) {
+                    charCount[char]++;
+                } else {
+                    charCount[char] = 1;
+                }
+            });
+            return charCount;
+        }
+
+        function displayCharacter() {
+            var characters = ['a', 'b', 'd', 'a', 'b', 'a','c'];
+            var counts = countCharacters(characters);
+            document.write("Character counts: <br>");
+            for (var char in counts) {
+                document.write(char + ": " + counts[char] + "<br>");
+            }
+        }
+
+        
+        displayCharacter();
+   </script> 
+</body>
+</html>

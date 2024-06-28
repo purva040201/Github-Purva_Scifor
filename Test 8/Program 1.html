@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 8</title>
+</head>
+
+<body>
+    <label for="dateInput">Enter a date:</label>
+    <input type="date" id="dateInput">
+    <button onclick="displayAdjustedDate()">Adjust Date</button>
+    <pre id="result"></pre>
+    <script>
+        function adjustDate(inputDate) {
+            
+            var dateObj = new Date(inputDate);
+
+           
+            var currentMonth = dateObj.getMonth() + 1; 
+
+           
+            var nextMonth = currentMonth % 12; 
+            var year = dateObj.getFullYear();
+            if (nextMonth === 0) {
+                nextMonth = 12;
+                year += 1;
+            }
+            dateObj.setMonth(nextMonth - 1); 
+            dateObj.setFullYear(year);
+
+           
+            dateObj.setDate(15);
+
+          
+            var adjustedYear = dateObj.getFullYear();
+
+            return {
+                currentMonth: currentMonth,
+                adjustedDate: dateObj,
+                adjustedYear: adjustedYear
+            };
+        }
+
+        function displayAdjustedDate() {
+            var inputDate = document.getElementById("dateInput").value;
+            var result = adjustDate(inputDate);
+            document.getElementById("result").innerText =
+                'Current Month: ' + result.currentMonth + '\n' +
+                'Adjusted Date: ' + result.adjustedDate + '\n' +
+                'Adjusted Year: ' + result.adjustedYear;
+        }
+    </script>
+</body>
+</html>
