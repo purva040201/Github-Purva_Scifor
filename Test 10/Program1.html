@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 10</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <div id="root"></div>
+    <script type="text/babel">
+      function StudentDetails(props) {
+        return (
+          <div>
+            <p>Name: {props.name}</p>
+            <p>Age: {props.age}</p>
+            <p>Email: {props.email}</p>
+            <p>Mobile No: {props.mobileNo}</p>
+            <p>City: {props.city}</p>
+          </div>
+        );
+      }
+
+      const myElement = (
+        <StudentDetails
+          name="Geeta"
+          age={30}
+          email="geeta@example.com"
+          mobileNo="1234567890"
+          city="Solapur"
+        />
+      );
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(myElement);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 10</title>
+    
+</head>
+<body>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <div id="root"></div>
+    <script type="text/babel">
+        const B = (props) => {
+            return (
+                <div>
+                    <h3>Data: {props.data}</h3>
+                </div>
+            );
+        };
+
+        const A = () => {
+            const name = "geeta";
+            const age = "30";
+            const mail="geeta@example.com";
+            const mobilenumber="1234567890";
+            const city="solapur";
+
+            return (
+                <div>
+                    <h1>Parent Component</h1>
+                    <B data={name + " " + age+" "+mail+" "+" "+mobilenumber+" "+city} />
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<A />);
+    </script>
+</body>
+</html>
