@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Demo</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        class Demo extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    name: "Raj",
+                    age: 28,
+                    gender: "male"
+                };
+            }
+
+            updateState = () => {
+                this.setState({
+                    name: "Seeta",
+                    age: 23,
+                    gender: "female"
+                });
+            }
+
+            render() {
+                return (
+                    <div>
+                        <p>
+                            My name is {this.state.name} and my age is {this.state.age}. My gender is {this.state.gender}.
+                        </p>
+                        <button onClick={this.updateState}>Update State</button>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(<Demo />, document.getElementById('root'));
+    </script>
+</body>
+</html>
