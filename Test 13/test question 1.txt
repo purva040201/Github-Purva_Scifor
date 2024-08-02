@@ -1,0 +1,15 @@
+ 1) What is RestfulAPI?
+-> A RESTful API (Representational State Transfer Application Programming Interface) 
+   is a type of web service that follows the principles of REST architecture.
+   REST is an architectural style for designing networked applications. It relies on a stateless, 
+   client-server communication model and uses standard HTTP methods.
+-> It enables you to perform CRUD operation.
+-> Simply RESTful API allows different software system communicate over internet using HTTP methos.
+
+ =>HTTP Methods in REST:
+
+  GET: Retrieve a resource.
+  POST: Create a new resource.
+  PUT: Update an existing resource.
+  DELETE: Delete a resource.
+  PATCH: Apply partial modifications to a resource
